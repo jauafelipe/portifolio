@@ -10,7 +10,8 @@ interface HeaderProps {
   icon?:JSX.Element
   textButton?: string
 }
-export const Header:React.FC<HeaderProps> = ({scrollInto, icon, textButton}) => {
+// eslint-disable-next-line no-empty-pattern
+export const Header:React.FC<HeaderProps> = ({}) => {
 
   return (
     <>
