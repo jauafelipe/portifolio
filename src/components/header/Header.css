@@ -1,0 +1,90 @@
+
+.header {
+    background-image: url(" https://media.istockphoto.com/id/1679512451/pt/foto/rocky-mountain-landscape-at-night-with-stars-and-northern-lights-in-sky.webp?b=1&s=170667a&w=0&k=20&c=q4xRlVOIcsOd9LcE5oFtPZZO6X3RCdQdiu6mmVzEVD0=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.container{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+}
+.container .box {
+
+}
+
+.container .box .image {
+    width: 200px;
+    height: 230px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.about-me{
+    width: 100%;
+}
+.about-me h2 {
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.about-me .stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.scroll-button {
+    margin: 0 auto;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 50px;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 25%;
+    padding: 20px;
+    animation: bounceAnimation 2s infinite alternate;
+}
+
+.scroll-button:hover {
+    color: rgb(0, 204, 255);
+}
+
+@keyframes bounceAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+
+@media screen and (width <= 280px) {
+    .about-me h2 {
+        font-size: 15px;
+    }
+    .about-me .stack {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .image {
+        width: 90px;
+        height: 120px;
+        margin: auto;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,45 @@
+.box {
+}
+
+.box-container {
+    padding: 13px;
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+    color: #fff;
+    margin-top: 20px;
+    box-shadow: -20px -2px 20px rgb(0, 0, 0);
+    border-radius:20px;
+
+}
+
+.box-container div {
+    margin-top: 10px;
+    border-top: 2px solid white;
+}
+@media (width <= 480px) {
+    .box-container {
+        width: 250px;
+    }
+    .box-container h2 {
+        padding: 2px;
+        font-size: 20px;
+    }
+    .box-container img {
+        width: 100%;
+    }
+}
+
+@media screen and (width <=520px) {
+    .box-container {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (width <= 705) {
+    
+}
