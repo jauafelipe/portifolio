@@ -1,8 +1,9 @@
 import React from "react";
 import "./Header.css"
 import { AiOutlineDotNet } from "react-icons/ai";
-import { FaReact } from "react-icons/fa";
+import { FaInstagram, FaLinkedin, FaReact } from "react-icons/fa";
 import { SiMicrosoftsqlserver, SiMysql } from "react-icons/si";
+import { FaGithub } from "react-icons/fa";
 
 interface HeaderProps {
   scrollInto: () => void;
@@ -12,9 +13,10 @@ interface HeaderProps {
 export const Header:React.FC<HeaderProps> = ({scrollInto, icon, textButton}) => {
 
   return (
+    <>
     <div className="header">
 
-      <header className="container">
+      <div className="container">
         <div className="box">
           <img className="image" src="images/profile.jpg" alt="image" />
           <div className="about-me">
@@ -23,7 +25,7 @@ export const Header:React.FC<HeaderProps> = ({scrollInto, icon, textButton}) => 
             </h2>
             <div className="stack">
               <AiOutlineDotNet
-                color="#fff"
+                color="#000"
                 size={50}
               />
               <FaReact
@@ -35,16 +37,32 @@ export const Header:React.FC<HeaderProps> = ({scrollInto, icon, textButton}) => 
                 size={50}
               />
               <SiMysql
-                color="#EFF1F3"
+                color="#000"
                 size={55} />
             </div>
           </div>
+
         </div>
-      </header>
 
-      <button className="scroll-button" onClick={scrollInto}>{textButton}{icon}
-      </button>
-    </div>
+      </div>
+      
+      <div className="social-midia">
+            <h2>redes sociais para contatos ou para projetos</h2>
+            <div className="icons">
+              <a href="https://github.com/jauafelipe" target="_blank" rel="github">
+              <FaGithub size={50} color="#000" />
+              </a>
+              <a href="https://www.linkedin.com/in/jau%C3%A3-felipe-bb2b322ab/" target="_blank" rel="">
+                <FaLinkedin color="0077b6" size={50} />
+              </a>
+              <a href="https://www.instagram.com/jauafelipe/?next=%2Finterdevservices%2F" target="_blank">
+              <FaInstagram size={50} color="#sef476f" />
+s              </a>
+            </div>
+      </div>
 
+
+     </div>
+  </>
   )
 }

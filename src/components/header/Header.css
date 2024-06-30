@@ -1,19 +1,16 @@
 
 .header {
-    background-image: url(" https://media.istockphoto.com/id/1679512451/pt/foto/rocky-mountain-landscape-at-night-with-stars-and-northern-lights-in-sky.webp?b=1&s=170667a&w=0&k=20&c=q4xRlVOIcsOd9LcE5oFtPZZO6X3RCdQdiu6mmVzEVD0=");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
+    display: flex;
     height: 100vh;
-    padding: 20px;
 }
 
 
 .container{
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
-    max-width: 600px;
-    margin: auto;
+    margin: 10px;
+    height: 25em;
+    background-color: #ffffff;
+    width: 600px;
+
     padding: 10px;
 }
 .container .box {
@@ -21,8 +18,8 @@
 }
 
 .container .box .image {
-    width: 200px;
-    height: 230px;
+    width: 150px;
+    height: 190px;
     margin: auto;
     border-radius: 30px;
 }
@@ -33,7 +30,7 @@
 .about-me h2 {
     font-size: 20px;
     text-align: center;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .about-me .stack {
@@ -73,13 +70,50 @@
 
 
 
-@media screen and (width <= 280px) {
+
+.social-midia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 25em;
+    background-color: #ffffff;
+    width: 600px;
+    padding: 10px;
+}
+.social-midia h2 {
+    font-size: 20px;
+}
+
+.social-midia .icons {
+}
+
+.social-midia .icons a {
+    margin: 8px;
+}
+@media screen and (width < 400px) {
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .container {
+        width:100%;
+        max-width: 350px;
+
+    }
+
+    .social-midia {
+        width:100%;
+        max-width: 350px;
+    }
     .about-me h2 {
         font-size: 15px;
     }
     .about-me .stack {
         display: flex;
-        flex-direction: column;
     }
     .container .image {
         width: 90px;
