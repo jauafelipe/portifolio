@@ -1,4 +1,3 @@
-import React from "react";
 import "./AboutMeStart.css"
 import { AiOutlineDotNet } from "react-icons/ai";
 import { FaLinkedin, FaReact } from "react-icons/fa";

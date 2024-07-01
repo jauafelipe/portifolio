@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css'
 import { AboutMeStart } from './components/AboutMeStart/AboutMeStart'
 import { GridContainer } from './components/grid-container/GridContainer';
