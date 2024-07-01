@@ -1,23 +1,28 @@
 import "./BoxContainer.css";
-import React, { CSSProperties } from "react";
+import React, { CSSProperties, ReactNode } from "react";
 
 interface BoxContainerProps {
-    imageURL?: string;
+    link?:string
     alt?: string
     text?: string;
     styleProps?:CSSProperties
+    icon?: ReactNode
 }
 
 export const BoxContainer: React.FC<BoxContainerProps> = ({
-    imageURL,
+    link,
     text,
-    styleProps,
-    alt
+    icon
 }) => {
     return (
       <div className="box">
           <div className="box-container">
-            <img  src={imageURL} alt={alt} style={styleProps} />
+            <span className="icons">
+            {icon}
+            </span>
+            <a  href={link} target="_blank">
+              click para ser redirecionado
+            </a>
             <div>
               <h2 >{text}</h2>
             </div>

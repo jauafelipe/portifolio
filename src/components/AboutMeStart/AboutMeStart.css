@@ -1,20 +1,18 @@
-
 .header {
     display: flex;
-    height: 100vh;
-}
+    flex-wrap: wrap;
+    
+    justify-content: center;
 
+}
 
 .container{
-    margin: 10px;
-    height: 25em;
+    margin: 15px;
     background-color: #ffffff;
     width: 600px;
-
     padding: 10px;
-}
-.container .box {
-
+    border-radius: 20px;
+    box-shadow: 10px 20px black;
 }
 
 .container .box .image {
@@ -28,7 +26,6 @@
     width: 100%;
 }
 .about-me h2 {
-    font-size: 20px;
     text-align: center;
     color: rgb(0, 0, 0);
 }
@@ -72,27 +69,69 @@
 
 
 .social-midia {
+    margin: 15px;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 10px;
-    height: 25em;
-    background-color: #ffffff;
     width: 600px;
-    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 10px 20px black;
+
 }
 .social-midia h2 {
-    font-size: 20px;
 }
 
-.social-midia .icons {
-}
+
 
 .social-midia .icons a {
     margin: 8px;
 }
-@media screen and (width < 400px) {
+.social-midia .box-mail {
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-midia .box-mail a {
+    color: red;
+}
+.grade-download {
+    box-shadow: 10px 20px black;
+    margin: 15px;
+    width: 600px;
+    height:10em;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grade-download a {
+    background-color: #ae00ff;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 15px;
+    color: #fff;
+    font-size: 30;
+    font-weight: bold;
+    transition: all 0.5s;
+
+}
+.grade-download a:hover {
+    background-color: rgba(0, 0, 0, 0.493);
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 480px) {
     .header{
         display: flex;
         flex-direction: column;
@@ -109,9 +148,7 @@
         width:100%;
         max-width: 350px;
     }
-    .about-me h2 {
-        font-size: 15px;
-    }
+  
     .about-me .stack {
         display: flex;
     }
@@ -121,4 +158,11 @@
         margin: auto;
         border-radius: 30px;
     }
+    
+    .grade-download {
+        width:100%;
+        max-width: 350px;
+    }
 }
+
+

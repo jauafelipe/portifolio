@@ -4,10 +4,11 @@
   text-align: center;
 }
 
-.about-me {
 
+.projetos h2 {
+  margin-top: 20px;
 }
-@media (width <= 480px) {
+@media screen and  (width <= 480px) {
    h2 {
       padding: 2px;
       font-size: 20px;
@@ -15,12 +16,20 @@
    img {
       width: 100%;
   }
+  .projetos {
+    width:100%;
+}
 }
 
-@media screen and (width <=520px) {
+@media screen and (width <=480px) {
  
 }
 
 @media screen and (width <= 705) {
   
 }
+
+
+
+
+

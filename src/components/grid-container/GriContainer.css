@@ -1,15 +1,10 @@
 .container-box {
-    padding-top: 20px;
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 5px;
-    max-width: 1200px;
-    width: 100%;
-    margin: 0 auto;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
   
-  @media screen and (width <= 420px) {
+@media screen and (width <= 420px) {
     .container-box {
       height: auto;
     }  
