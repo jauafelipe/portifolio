@@ -16,7 +16,6 @@ export const AboutMeStart = () => {
 
       <div className="container">
         <div className="box" >
-
           <img className="image" src="images/profile.jpg" alt="image" />
           <div className="about-me">
             <h2>

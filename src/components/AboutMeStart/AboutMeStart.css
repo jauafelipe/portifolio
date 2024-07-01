@@ -1,7 +1,6 @@
 .header {
     display: flex;
     flex-wrap: wrap;
-    
     justify-content: center;
 
 }
@@ -74,10 +73,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 600px;
     background-color: #ffffff;
     box-shadow: 10px 20px black;
-
 }
 .social-midia h2 {
 }
