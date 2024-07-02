@@ -1,167 +1,240 @@
-.header {
+.cabeçalho {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    color: white;
 }
-
-.container{
-    margin: 15px;
-    background-color: #ffffff;
-    width: 600px;
-    padding: 10px;
-    border-radius: 20px;
-    box-shadow: 10px 20px black;
+.main {
 }
-
-.container .box .image {
-    width: 150px;
-    height: 190px;
-    margin: auto;
-    border-radius: 30px;
-}
-
-.about-me{
-    width: 100%;
-}
-.about-me h2 {
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.about-me .stack {
+.main .container {
+    max-width: 1200px;
+    height: 100vh;
+    text-align: start;
     display: flex;
-    justify-content: center;
+    flex-direction: row-reverse;
     align-items: center;
-}
-.scroll-button {
+    justify-content: space-evenly;
     margin: 0 auto;
-    font-size: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: none;
+}
+.main .container img {
+    width: 300px;
+    height: 350px;
+}
+.main .container h2{
+    font-size: 55px;
+    color: white;
+}
+.main .container p {color: white;font-size: 30px; text-decoration: underline;}
+
+
+
+
+
+
+.main .social-midia {
     color: #fff;
-    cursor: pointer;
-    margin-top: 50px;
-    transition: all 0.5s;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 25%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    align-items: center;
     padding: 20px;
-    animation: bounceAnimation 2s infinite alternate;
+    height: 100vh;
 }
+.main .social-midia h2 {
+    width: 600px;
+    text-align: start;
+    font-size: 50px;
 
-.scroll-button:hover {
-    color: rgb(0, 204, 255);
 }
-
-@keyframes bounceAnimation {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(10px);
-    }
-}
-
-
-
-
-.social-midia {
-    margin: 15px;
-    border-radius: 20px;
+.main .social-midia .icons {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 600px;
-    background-color: #ffffff;
-    box-shadow: 10px 20px black;
-}
-.social-midia h2 {
 }
 
 
+.main .social-midia .icons a:nth-child(1):hover {
+    background-color: #000000;
+    box-shadow: -10px 10px 10px   rgb(0, 0, 0);
 
-.social-midia .icons a {
-    margin: 8px;
 }
-.social-midia .box-mail {
-    display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.social-midia .box-mail a {
-    color: red;
-}
-.grade-download {
-    box-shadow: 10px 20px black;
-    margin: 15px;
-    width: 600px;
-    height:10em;
+.main .social-midia .icons a:nth-child(2):hover {
+    background-color:none;
     background-color: #fff;
-    border-radius: 20px;
+    box-shadow: -10px 10px 10px   rgb(0, 68, 255);
+}
+.main .social-midia .icons a:nth-child(3):hover {
+    background-color: #fff;
+    box-shadow: -10px 10px 10px   rgb(255, 0, 0);
+
+}
+
+.main .grade-download{
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    height: 100vh;
+    padding: 20px;
+}
+
+.main .grade-download h2 {
+    width: 600px;
+    text-align: start;
+    font-size: 50px;
+}
+.main .grade-download .grade-icons  {
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+.main .grade-download .grade-icons a {
+    margin-top: 30px;
 }
 
-.grade-download a {
-    background-color: #ae00ff;
-    border: 2px solid black;
-    border-radius: 20px;
-    padding: 15px;
-    color: #fff;
-    font-size: 30;
-    font-weight: bold;
-    transition: all 0.5s;
-
-}
-.grade-download a:hover {
-    background-color: rgba(0, 0, 0, 0.493);
-    transition: all 0.5s;
+.main .grade-download .grade-icons a:nth-child(1):hover {
+    background-color: #fff;
+    box-shadow: -10px 10px 10px   rgb(51, 255, 0);
 }
 
+.main .grade-download .grade-icons a:nth-child(2):hover {
+    background-color: #fff;
+    box-shadow: -10px 10px 10px   rgb(255, 0, 0);
+}
 
-
-
-
-
-
-
-@media screen and (max-width: 480px) {
-    .header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .container {
-        width:100%;
-        max-width: 350px;
-
-    }
-
-    .social-midia {
-        width:100%;
-        max-width: 350px;
-    }
-  
-    .about-me .stack {
-        display: flex;
-    }
-    .container .image {
-        width: 90px;
-        height: 120px;
-        margin: auto;
-        border-radius: 30px;
+@media screen and (width <= 768px) { 
+    .main .container {
     }
     
-    .grade-download {
-        width:100%;
-        max-width: 350px;
+    .main .container img {
+        width: 200px;
+        height: 250px;
     }
-}
+    .main .container h2{
+        font-size: 40px;
+        color: white;
+    }
+    .main .container p {
+        color: white;
+        font-size: 20px; 
+        text-decoration: none;
+    }
+    .main .container .tecs .tec-icon {
+        width: 60px;
+    }
 
+    
+
+
+
+    .main .social-midia {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .main .social-midia h2 {
+        width: 320px;
+        font-size: 40px;
+    }
+    .main .social-midia .icons {
+        display: flex;
+    }
+    
+    .main .social-midia .icons a .icon-social {
+        width: 60px;
+        
+    }
+
+    .main .grade-download{
+        color: #fff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1200px;
+        height: 100vh;
+        padding: 20px;
+    }
+    
+    .main .grade-download h2 {
+        font-size: 40px;
+        width: 300px;
+    }
+    .main .grade-download .grade-icons  {
+    }
+    .main .grade-download .grade-icons a {
+    }
+    .main .grade-download .grade-icons a .icon-grade {
+        width: 60px;
+    }
+    
+} 
+
+@media screen and (max-width:480px) { 
+    .main .container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+    
+    .main .container img {
+        width: 120px;
+        height: 150px;
+    }
+    .main .container h2{
+        font-size: 40px;
+        color: white;
+    }
+    .main .container p {
+        color: white;
+        font-size: 20px; 
+        text-decoration: none;
+    }
+    .main .container .tecs .tec-icon {
+        width: 60px;
+    }
+
+    
+
+
+
+    .main .social-midia {
+        flex-direction: column;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+    .main .social-midia h2 {
+        width: 320px;
+        font-size: 40px;
+    }
+    .main .social-midia .icons {
+        flex-direction: row;
+    }
+    
+    .main .social-midia .icons a .icon-social {
+        width: 60px;
+        
+    }
+    
+    .main .grade-download{
+        color: #fff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        max-width: 1200px;
+        height: 100vh;
+        padding: 20px;
+    }
+    
+    .main .grade-download h2 {
+        font-size: 40px;
+        width: 300px;
+    }
+    .main .grade-download .grade-icons  {
+    }
+    .main .grade-download .grade-icons a {
+    }
+    .main .grade-download .grade-icons a .icon-grade {
+        width: 60px;
+    }
+} 
 

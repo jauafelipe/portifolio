@@ -1,10 +1,9 @@
 import "./AboutMeStart.css"
 import { AiOutlineDotNet } from "react-icons/ai";
-import { FaLinkedin, FaReact } from "react-icons/fa";
+import { FaFileDownload, FaLinkedin, FaReact, FaRegFilePdf } from "react-icons/fa";
 import { SiMicrosoftsqlserver, SiMysql } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { FcDocument } from "react-icons/fc";
 
 
 export const AboutMeStart = () => {
@@ -12,36 +11,53 @@ export const AboutMeStart = () => {
 
   return (
     <>
-    <div className="header">
+    <header className="cabeçalho">
+      <nav>
+        <h3>nav bar aqui</h3>
+      </nav>
+    </header>
 
+
+
+    <div className="main">
+
+      
       <div className="container">
-        <div className="box" >
-          <img className="image" src="images/profile.jpg" alt="image" />
-          <div className="about-me">
-            <h2>
-              Sou estudante de Análise e Desenvolvimento de Sistemas, Com experiencia em:
-            </h2>
+      <img src="images/profile.jpg" alt="image" />
+          
             <div className="stack">
-              <AiOutlineDotNet
-                color="#000"
-                size={50}
+            <h2>
+              BackEnd <br />
+              Developer.
+            </h2>
+            <p>
+              Desenvolvendo Soluções e <br />Adquirindo Conhecimento!!
+            </p>
+             <div className="tecs">
+             <AiOutlineDotNet
+             className="tec-icon"
+                color="#fff"
+                size={100}
               />
               <FaReact
+             className="tec-icon"
+
                 color="#00B2FF"
-                size={45}
+                size={90}
               />
               <SiMicrosoftsqlserver
+             className="tec-icon"
+
                 color="#FF0000"
-                size={50}
+                size={90}
               />
               <SiMysql
-                color="#000"
-                size={55} />
+             className="tec-icon"
+
+                color="#fff"
+                size={100} />
+             </div>
             </div>
-          </div>
-
-        </div>
-
       </div>
       
 
@@ -49,36 +65,44 @@ export const AboutMeStart = () => {
       <div className="social-midia">
             <h2>redes sociais para contatos ou para projetos</h2>
             <div className="icons">
-              <a href="https://github.com/jauafelipe" target="_blank" rel="github">
-              <FaGithub size={50} color="#000" />
+
+              <a href="https://github.com/jauafelipe" target="_blank" >
+              <FaGithub className="icon-social" size={100} color="#fff" />
               </a>
-              <a href="https://www.linkedin.com/in/jau%C3%A3-felipe-bb2b322ab/" target="_blank" rel="">
-                <FaLinkedin color="0077b6" size={50} />
+
+              <a href="https://www.linkedin.com/in/jau%C3%A3-felipe-bb2b322ab/" target="_blank">
+                <FaLinkedin className="icon-social"  color="0077b6" size={100} />
+              </a>
+
+              <a href="mailto:jauafelipe345@gmail.com">
+              <MdEmail className="icon-social"  size={104} color="red" />
               </a>
             </div>
-            <div className="box-mail">
-              <MdEmail size={40} color="red" />
-            <h2>
-              email: 
-             </h2>
-             <a href="mailto:jauafelipe345@gmail.com">
-                jauafelipe345@gmail.com
-                </a>
-            </div>
+            
+            
       </div>
-
-
-
-
 
       <div className="grade-download">
-        <FcDocument size={50} />
+        <h2>Click ao Lado Para Fazer o Download do Meu CV ou se Deseja visualiza-lo</h2>
+        <div className="grade-icons">
 
-        <h2>Click para fazer o download do meu CV</h2>
-        <a href="downloads\my_cv.pdf" download>download</a>
+        <a href="downloads\my_cv.pdf" download>
+        <FaFileDownload className="icon-grade"  size={100} color="#70e000"/>
+        </a>
 
+        <a href="downloads\my_cv.pdf">
+        <FaRegFilePdf className="icon-grade"   size={100} color="red" />
+        </a>
+        </div>
       </div>
    
+
+
+
+
+
+
+
     </div>
   </>
   )
