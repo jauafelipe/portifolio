@@ -1,4 +1,4 @@
-import "./AboutMeStart.css"
+import "./Home.css"
 
 
 interface AboutMeProps {
