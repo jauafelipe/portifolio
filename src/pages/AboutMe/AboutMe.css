@@ -1,0 +1,54 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-1  {
+    margin: 40px;
+}
+.box-1 .text-container {
+    height: 2em; /* Define a height based on the expected text size */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.buttons button {
+    margin: 20px;
+}
+
+
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+
+
+@media  screen and (width <= 480px) {
+    .buttons {
+        flex-direction: column;
+    }
+}

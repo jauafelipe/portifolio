@@ -1,0 +1,12 @@
+.button {
+    width: 300px; 
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 30px;
+    color: #fff;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    cursor: pointer;
+    animation: boxButtonShadow 2s infinite;
+    transition: box-shadow 1s ease-in-out;
+}

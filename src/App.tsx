@@ -5,9 +5,7 @@ function App() {
 
   return (
     <>
-      <HomePage onClick={() => {
-        alert("em Desenvolvimento")
-      }}/>
+      <HomePage />
     </>
   )
 }
