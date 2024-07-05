@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <Routes>
       <Route path='/'  element={<App />} loader />
-      <Route path='/about-me' element={<StartPainel />}/>
+      <Route path='/start' element={<StartPainel />}/>
       <Route path='home' element={<HomePage/>} />
     </Routes>
   </BrowserRouter>
