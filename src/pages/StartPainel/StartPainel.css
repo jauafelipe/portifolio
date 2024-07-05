@@ -13,7 +13,7 @@
     margin: 40px;
 }
 .box-1 .text-container {
-    height: 2em; /* Define a height based on the expected text size */
+    height: 2em;
     display: flex;
     justify-content: center;
     align-items: center;

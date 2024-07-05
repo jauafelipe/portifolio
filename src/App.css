@@ -12,9 +12,6 @@
    img {
       width: 100%;
   }
-  .projetos {
-    width:100%;
-}
 }
 
 @media screen and (width <=480px) {

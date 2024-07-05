@@ -6,7 +6,7 @@
   
 @media screen and (width <= 420px) {
     .container-box {
-      height: auto;
+      padding: 20px;
     }  
   }
   @media screen and (width <= 350px) {

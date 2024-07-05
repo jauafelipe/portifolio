@@ -1,5 +1,6 @@
 import "./BoxContainer.css";
 import React, { CSSProperties, ReactNode } from "react";
+import {motion} from "framer-motion"
 
 interface BoxContainerProps {
     link?:string
@@ -7,27 +8,31 @@ interface BoxContainerProps {
     text?: string;
     styleProps?:CSSProperties
     icon?: ReactNode
+    isDownload?:boolean | string
+    button?:ReactNode
 }
 
 export const BoxContainer: React.FC<BoxContainerProps> = ({
     link,
     text,
-    icon
+    icon,
+    isDownload,button
 }) => {
     return (
-      <div className="box">
+      <motion.div  className="box">
           <div className="box-container">
             <span className="icons">
             {icon}
             </span>
-            <a  href={link} target="_blank">
-              click para ser redirecionado
-            </a>
             <div>
-              <h2 >{text}</h2>
+              <h2>{text}</h2>
             </div>
+            <a  href={link} target="_blank" download={isDownload}>
+              {button}
+            </a>
+
         </div>
-      </div>
+      </motion.div>
     );
 };
 

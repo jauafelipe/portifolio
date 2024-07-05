@@ -1,5 +1,5 @@
+import "./StartPainel.css"
 import React, {  } from "react";
-import "./AboutMe.css"
 import { AiOutlineUser } from "react-icons/ai";
 import { ButtonComponent } from "../../components/button/ButtonComponent";
 
@@ -8,7 +8,7 @@ import { ButtonComponent } from "../../components/button/ButtonComponent";
 
 
 
-export const AboutMePage = () => {
+export const StartPainel = () => {
     const texts = ["Seja bem vindo!!", "Meu Nome é Jauã Felipe", "Resolvi Desenvolver Esse portifolio", "Para Afins de Estudos e projetos","Aproveite"];
     const [index, setIndex] = React.useState(0);
     const [fadeIn, setFadeIn] = React.useState(false);
@@ -44,7 +44,7 @@ export const AboutMePage = () => {
                         ( <><ButtonComponent text="Voltar" onclick={() => onButtonChange('prev')} />
                         <ButtonComponent text="Proximo" onclick={() => onButtonChange('next')} /></>) 
                         : <a href="/home">
-                            <ButtonComponent text="ir Para Home" onclick={() =>console.log("direcionando")} />
+                            <ButtonComponent text="Home" onclick={() =>console.log("direcionando")} />
                         </a> }
                     </div>
                 </div>

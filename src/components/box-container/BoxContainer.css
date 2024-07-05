@@ -1,34 +1,37 @@
-
-
 .box-container {
-    background-color: #fff;
     margin: 20px;
-    padding: 13px;
+    padding: 20px;
     width: 300px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(255, 255, 255);
     color: #000000;
     margin-top: 20px;
-    box-shadow: -20px -2px 20px rgb(0, 0, 0);
-    border-radius:20px;
-
+    border: 2px solid black;
 }
 .icons {
     display: flex;
     align-items: center;
 }
 .box-container div {
+    height: 125px;
     margin-top: 10px;
-    border-top: 2px solid rgb(0, 0, 0);
+    margin-bottom: 5px;
+    padding: 5px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.box-container  a,button {
+    max-width: 200px;
 }
 
 
 
 @media (width <= 440px) {
     .box-container {
+        min-width: 300px;
         display: flex;
         flex-direction: column;
         margin: 0;
