@@ -17,11 +17,9 @@ export const StartHome = () => {
           <p>Bem Vindo ao Meu Portifolio</p>
           <div className="tecs">
           </div>
-
-          <a href="/about-me">
+          <a href="/start">
           <ButtonComponent text="Entrar" onclick={() => console.log("Ola mundo")} />
           </a>
-
         </div>
       </div>
    </main>

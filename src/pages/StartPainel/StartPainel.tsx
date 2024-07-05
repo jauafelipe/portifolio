@@ -1,5 +1,5 @@
 import "./StartPainel.css"
-import React, {  } from "react";
+import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { ButtonComponent } from "../../components/button/ButtonComponent";
 
@@ -48,7 +48,6 @@ export const StartPainel = () => {
                         </a> }
                     </div>
                 </div>
-
             </div>
         </main>
 
