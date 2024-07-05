@@ -1,5 +1,6 @@
 import "./StartHome.css"
 import { ButtonComponent } from "../../components/button/ButtonComponent"
+import { Link } from "react-router-dom"
 
 
 
@@ -17,9 +18,9 @@ export const StartHome = () => {
           <p>Bem Vindo ao Meu Portifolio</p>
           <div className="tecs">
           </div>
-          <a href="/start">
-          <ButtonComponent text="Entrar" onclick={() => console.log("Ola mundo")} />
-          </a>
+          <Link to={"/start"}>
+          <ButtonComponent text="Entrar"  onclick={() => console.log("Ola mundo")} />
+          </Link>
         </div>
       </div>
    </main>

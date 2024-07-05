@@ -2,6 +2,7 @@ import "./StartPainel.css"
 import React from "react";
 import { AiOutlineUser } from "react-icons/ai";
 import { ButtonComponent } from "../../components/button/ButtonComponent";
+import { Link } from "react-router-dom";
 
 
 
@@ -43,9 +44,9 @@ export const StartPainel = () => {
                         {index < texts.length - 1 ?   
                         ( <><ButtonComponent text="Voltar" onclick={() => onButtonChange('prev')} />
                         <ButtonComponent text="Proximo" onclick={() => onButtonChange('next')} /></>) 
-                        : <a href="/home">
+                        : <Link to={"/home"}>
                             <ButtonComponent text="Home" onclick={() =>console.log("direcionando")} />
-                        </a> }
+                        </Link> }
                     </div>
                 </div>
             </div>
