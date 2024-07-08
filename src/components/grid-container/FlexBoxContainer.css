@@ -9,9 +9,14 @@
       padding: 20px;
     }  
   }
-  @media screen and (width <= 350px) {
+@media screen and (width <= 350px) {
     .container-box {
       display: flex;
       flex-direction: column;
     }
+}
+
+@media  screen and (width <= 590px) {
+  .container-box {
   }
+}

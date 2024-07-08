@@ -4,10 +4,9 @@ import { FlexBoxContainer } from "../../components/grid-container/FlexBoxContain
 import { GrGraphQl } from "react-icons/gr";
 import { AiOutlineDotNet } from "react-icons/ai";
 import { FcMultipleDevices } from "react-icons/fc";
-import { FaDiscord, FaFilePdf, FaGithub, FaJava, FaLinkedin, FaReact } from "react-icons/fa";
+import { FaDiscord, FaFilePdf, FaGithub, FaInstagram, FaJava, FaLinkedin, FaReact } from "react-icons/fa";
 import { SiSqlite, SiTypescript } from "react-icons/si";
 import { ButtonComponent } from "../../components/button/ButtonComponent";
-import { ProgressBar } from "../../components/motion-progress-bar/Progress-bar";
 import LayoutComponent from "../../components/motion-layout/LayoutComponentTec";
 import { motion } from "framer-motion"
 
@@ -20,7 +19,6 @@ import { motion } from "framer-motion"
 export const HomePage = () => {
     return (
         <main >
-            <ProgressBar />
             <div className="container-home">
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -32,7 +30,7 @@ export const HomePage = () => {
                         animate={{ opacity: 1 }}
                         transition={{ delay: 2 }} className="imagem">
                         <motion.img
-                             src="images\profile.jpg" alt="..." />
+                            src="images\profile.jpg" alt="..." />
                     </motion.div>
                     <motion.div className="text-sobre-mim">
                         <motion.h1
@@ -40,46 +38,61 @@ export const HomePage = () => {
                             animate={{ opacity: 1 }}
                             transition={{ delay: 3 }}
                         >Sobre</motion.h1>
-                        <motion.h3 
+                        <motion.h3
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 4 }}
-                        
-                        >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos.</motion.h3>
-                        <motion.div 
-                        
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{delay:5}}
-                        className="layout" >
+
+                        >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos. CLICK NA ESFERA </motion.h3>
+                        <motion.div
+
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 5 }}
+                            className="layout" >
                             <LayoutComponent />
                         </motion.div>
                     </motion.div>
-
                 </motion.div>
 
             </div>
 
 
             <div className="apresentacao">
-                <div className="container-apresentaçao">
-                    <div className="icon-git">
-                        <FaGithub size={40} color="000" />
-
+                <div className="container-github">
+                    <div className="icon-github" >
+                        <a href="https://github.com/jauafelipe" target="_blank">
+                            <FaGithub size={100} className="fa-icon-git" />
+                        </a>
                     </div>
                     <motion.div
-                        initial={{ scale: 0.8, rotateX: 70, opacity: 1 }}
-                        whileInView={{ scale: 1, rotateX: 0 }}
-                        transition={{ type: "spring" }}
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
                         className="box-img">
-                        <img src="images\profile-git.png" alt="" />
+                        <img src="images\git-hub.png" alt="" />
+                    </motion.div>
+                </div>
+
+
+                <div className="container-linkedin">
+                    <div className="icon-linkedin" >
+                        <a href="https://www.linkedin.com/in/jau%C3%A3-felipe-bb2b322ab/e" target="_blank">
+                            <FaLinkedin size={100} className="fa-icon-linkedin" />
+                        </a>
+                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        className="box-img">
+                        <img src="images\linkedin.png" alt="" />
                     </motion.div>
                 </div>
             </div>
 
 
 
-            <FlexBoxContainer>
+            <FlexBoxContainer style={{
+            }}>
                 <div>
                     <BoxContainer
                         text="Desenvolvi uma API utilizando GraphQL com ASP.NET, implementando autenticação de usuário por meio de tokens JWT."
@@ -113,30 +126,6 @@ export const HomePage = () => {
                 </div>
                 <div>
                     <BoxContainer
-                        link="https://www.linkedin.com/in/jau%C3%A3-felipe-bb2b322ab/"
-                        text="meu linkedin"
-                        icon={[
-                            <FaLinkedin size={40} color="00b4d8" />
-                        ]}
-                        button={<ButtonComponent text="redirecionar" onclick={() => console.log()} />}
-
-
-
-                    />
-                </div>
-                <div>
-                    <BoxContainer
-                        link="https://github.com/jauafelipe"
-                        text="meu repositorio"
-                        icon={[
-                            <FaGithub size={40} color="000" />
-                        ]}
-                        button={<ButtonComponent text="redirecionar" onclick={() => console.log()} />}
-                    />
-                </div>
-
-                <div>
-                    <BoxContainer
                         text={`clique para fazer download do meu CV`}
                         icon={
                             <FaFilePdf size={40} color="red" />
@@ -148,6 +137,39 @@ export const HomePage = () => {
                     />
                 </div>
             </FlexBoxContainer>
+
+            <footer className="footer-container">
+                <div className="container-empresa">
+                    <video src="logo\T.mp4" autoPlay muted loop></video>
+                    <a href="https://www.instagram.com/interdevservices/?theme=dark" target="_blank">
+                     <FaInstagram size={50} color="#fff" />interdevservices
+                    </a>
+                    <h2>Em busca de serviços? clique acima e chama dm</h2>
+                </div>
+                <div className="container-ig-pessoal">
+                    <img src="images\instagramimg.jpg" alt=""/>
+                    <a href="https://www.instagram.com/jauafelipe/" target="_blank">
+                     <FaInstagram size={50} color="#fff" />jauafelipe
+                    </a>
+                    <h2>meu instagram para uso pessoal como tambem para contato</h2>
+                </div>
+
+                <div className="discord">
+                <img src="images\discord.jpg" alt=""/>
+                    <a href="https://discord.gg/g3GV48qJNp" target="_blank">
+                     <FaDiscord size={50} color="#fff" />meu Discord
+                    </a>
+                    <h2>meu discord para contatos tambem</h2>
+                </div>
+            </footer>
+
+
+
+
+
+
+
+
         </main>
     )
 }
