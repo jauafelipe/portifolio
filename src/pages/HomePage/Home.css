@@ -1,8 +1,12 @@
 .container-home {
-    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: black;
     height: 100vh;
 }
+
+
 
 
 .container-home .box-sobre-mim {
@@ -14,19 +18,23 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 20px;
+
 }
 
 .container-home .box-sobre-mim .text-sobre-mim {
     max-width: 600px;
     flex: 1;
-    padding: 20px; 
+    padding: 20px;
     box-sizing: border-box;
 }
+
 .container-home .box-sobre-mim .text-sobre-mim h1 {
     font-size: 50px;
 }
+
 .container-home .box-sobre-mim .text-sobre-mim h3 {
-    font-size:20px;
+    font-size: 20px;
     text-decoration: underline;
 }
 
@@ -34,6 +42,7 @@
     border-radius: 30px;
     width: 200px;
 }
+
 .container-home .box-download {
     display: flex;
     flex-direction: column;
@@ -42,8 +51,9 @@
     margin-top: 20px;
     height: 100vh;
 }
-.container-home .box-download .contatos{
-    max-width: 1200px;  
+
+.container-home .box-download .contatos {
+    max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 50px;
     justify-content: space-around;
@@ -52,7 +62,8 @@
     border-radius: 20px;
     padding: 20px;
 }
-.container-home  .pdf{
+
+.container-home .pdf {
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -62,25 +73,30 @@
 
 
 
-.apresentacao{
-    height:100vh;
-    background-color:#000;
+.apresentacao {
+    height: 100vh;
+    background-color: #000;
     display: flex;
     justify-content: space-evenly;
 }
+
 .apresentacao .container-github {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
 }
+
 .apresentacao .container-github .icon-github .fa-icon-git {
     color: white;
     transition: ease-in 0.2s;
 
-}.apresentacao .container-github .icon-github .fa-icon-git:hover {
+}
+
+.apresentacao .container-github .icon-github .fa-icon-git:hover {
     transform: scale(1.2);
     transition: ease-in 0.2s;
 }
+
 .apresentacao .container-linkedin {
     display: flex;
     flex-direction: row-reverse;
@@ -91,6 +107,7 @@
     color: rgb(0, 89, 255);
     transition: ease-in 0.2s;
 }
+
 .apresentacao .container-linkedin .icon-linkedin .fa-icon-linkedin:hover {
     transform: scale(1.2);
     transition: ease-in 0.2s;
@@ -103,25 +120,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height:70vh;
+    height: 70vh;
     padding: 90px;
 }
+
 .footer-container .container-empresa {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 300px;
 }
-.footer-container .container-empresa a{ 
-    padding:10px;
+
+.footer-container .container-empresa a {
+    padding: 10px;
 
     display: flex;
     align-items: center;
     color: white;
 }
+
 .footer-container .container-empresa a:hover {
     color: #ff0000;
 }
+
 .footer-container .container-empresa video {
     margin-top: 50px;
     width: 100px;
@@ -130,13 +151,15 @@
 
 
 
-.footer-container  .container-ig-pessoal {
+.footer-container .container-ig-pessoal {
     display: flex;
     flex-direction: column;
-    align-items: center;   width: 300px;
+    align-items: center;
+    width: 300px;
 }
+
 .footer-container .container-ig-pessoal a {
-    padding:10px;
+    padding: 10px;
     display: flex;
     align-items: center;
     color: white;
@@ -145,6 +168,7 @@
 .footer-container .container-ig-pessoal a:hover {
     color: #ff0000;
 }
+
 .footer-container .container-ig-pessoal img {
     width: 150px;
     border-radius: 50%;
@@ -153,7 +177,8 @@
 .footer-container .discord {
     display: flex;
     flex-direction: column;
-    align-items: center;   width: 300px;
+    align-items: center;
+    width: 300px;
 }
 
 .footer-container .discord img {
@@ -162,7 +187,7 @@
 }
 
 .footer-container .discord a {
-    padding:10px;
+    padding: 10px;
 
     display: flex;
     align-items: center;
@@ -175,29 +200,32 @@
 }
 
 
-@media screen and (width <= 480px) {
+@media screen and (width <=480px) {
     .container-home {
-        height: auto;
+        height:20vh;
     }
-    
-.container-home .box-sobre-mim {
-    height: 140vh;
-    flex-direction: column;
-    align-items: center;
-}
 
-.container-home .box-sobre-mim .layout {
-    position: absolute;
-}
-  .container-home .box-sobre-mim h3 {
-     width:300px;
-     margin-bottom: 10px;
+    .container-home .box-sobre-mim {
+        height: 140vh;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-home .box-sobre-mim .layout {
+        position: absolute;
+    }
+
+    .container-home .box-sobre-mim h3 {
+        width: 300px;
+        margin-bottom: 10px;
 
     }
+
     .container-home .box-download .contatos {
         font-size: 15px;
         max-width: 600px;
     }
+
     .container-home .pdf {
         font-size: 15px;
         flex-direction: column;
@@ -205,62 +233,84 @@
     }
 
 
-
-    
-.footer-container {
-    height: auto;
-   flex-direction: column;
-    padding: 20px;
-
-}
-.footer-container .container-empresa, .container-ig-pessoal, .discord{
-    margin-top: 30px;
-}
-}
-
-@media  screen and (width <= 768px){
-    .container-home {
+    .footer-container {
         height: auto;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .footer-container .container-empresa,
+    .container-ig-pessoal,
+    .discord {
+        margin-top: 30px;
     }
     .apresentacao {
         padding-top: 30px;
         flex-direction: column;
         align-items: center;
     }
+
+}
+
+@media screen and (width <= 768px) {
+    .container-home {
+        height: auto;
+    }
+    .container-home .box-sobre-mim {
+        flex-direction: column;
+        margin-top: 100px;
+        height: 130vh;
+    }
+    .container-home .box-sobre-mim img {
+        margin-left: 14px;
+    }
+    .apresentacao {
+        height: auto;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .apresentacao .container-github {
         flex-direction: column;
     }
+
     .apresentacao .container-linkedin {
         flex-direction: column;
     }
 }
 
-@media screen and (width <= 820px) {
-    .apresentacao {
-        height: auto;
-    }
-    
-    .apresentacao .container-github .box-img img  {
+@media screen and (width <=820px) {
+   
+
+    .apresentacao .container-github .box-img img {
         width: 200px;
-    } 
+    }
+
     .apresentacao .container-github .icon-github .fa-icon-git {
         width: 80px;
     }
+
     .apresentacao .container-linkedin .box-img img {
         width: 200px;
     }
+
     .apresentacao .container-linkedin .icon-linkedin .fa-icon-linkedin {
         width: 80px;
     }
 
-    
-.footer-container {
-    height: auto;
-   flex-direction: column;
-    padding: 20px;
 
+    .footer-container {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+
+    }
+
+    .footer-container .container-empresa,
+    .container-ig-pessoal,
+    .discord {
+        margin-top: 30px;
+    }
 }
-.footer-container .container-empresa, .container-ig-pessoal, .discord{
-    margin-top: 30px;
-}
-} 

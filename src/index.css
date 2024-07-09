@@ -1,4 +1,6 @@
-
+html {
+    scroll-behavior: smooth;
+}
 *{
     padding: 0;
     margin: 0;
@@ -9,14 +11,12 @@
 
 
 a{
-    color: #ff0000;
     text-decoration: none;
     cursor: pointer;
     transition: ease-in 0.5s;
 
 }
 a:hover {
-    color: #002fff;
     transition: ease-in 0.2s;
 }
 h2 {

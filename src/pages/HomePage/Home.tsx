@@ -9,6 +9,7 @@ import { SiSqlite, SiTypescript } from "react-icons/si";
 import { ButtonComponent } from "../../components/button/ButtonComponent";
 import LayoutComponent from "../../components/motion-layout/LayoutComponentTec";
 import { motion } from "framer-motion"
+import Navbar from "../../components/nav-bar/NavBar";
 
 
 
@@ -20,6 +21,8 @@ export const HomePage = () => {
     return (
         <main >
             <div className="container-home">
+
+                <Navbar />
                 <motion.div
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
@@ -58,7 +61,7 @@ export const HomePage = () => {
             </div>
 
 
-            <div className="apresentacao">
+            <div className="apresentacao" id="apresentacao">
                 <div className="container-github">
                     <div className="icon-github" >
                         <a href="https://github.com/jauafelipe" target="_blank">

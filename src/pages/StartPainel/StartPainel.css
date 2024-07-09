@@ -51,7 +51,6 @@
 @media  screen and (width <= 480px) {
     .buttons {
         flex-direction: column;
-        background-color: red;
 
     }.buttons button {
         margin-right: auto;
