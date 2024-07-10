@@ -1,5 +1,5 @@
 import './NavBar.css'; // Certifique-se de criar e importar o arquivo CSS
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
