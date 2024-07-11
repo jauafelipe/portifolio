@@ -13,15 +13,28 @@ import Navbar from "../../components/nav-bar/NavBar";
 
 
 
+import {initiGa, logEvent, logPageView} from "../../Helper/Analytics/Google-analytic"
+import React from "react";
+
+
 
 
 
 
 export const HomePage = () => {
+
+    const handleClick = () => {
+        logEvent("user", "click Button", "clicado no botao")
+    }
+
+    React.useEffect(() => {
+        initiGa()
+        logPageView()
+        window.addEventListener("popstate", logPageView)
+    },[])
     return (
         <main>
             <div className="container-home">
-
                 <Navbar />
                 <motion.div
                     initial={{ opacity: 0 }}
@@ -102,7 +115,7 @@ className="layout" >
                         icon={[
                             <GrGraphQl size={50} color="#8338ec" />
                             , <AiOutlineDotNet size={50} />]}
-                        button={<ButtonComponent text="redirecionar" onclick={() => console.log()} />}
+                        button={<ButtonComponent text="redirecionar" onclick={handleClick} />}
                     />
                 </div>
                 <div>
@@ -112,7 +125,7 @@ className="layout" >
                             <FaReact size={50} color="#00b4d8" />
                                 , <SiTypescript size={50} color="#0d47a1" />
                             ]}
-                        button={<ButtonComponent text="redirecionar" onclick={() => console.log()} />}
+                        button={<ButtonComponent text="redirecionar" onclick={handleClick} />}
 
                     />
                 </div>
@@ -124,7 +137,7 @@ className="layout" >
                             <FaDiscord size={50} color="" />,
                             <SiSqlite size={50} color="00a8e8" />
                         ]}
-                        button={<ButtonComponent text="redirecionar" onclick={() => console.log()} />}
+                        button={<ButtonComponent text="redirecionar" onclick={handleClick} />}
                     />
                 </div>
                 <div>
@@ -135,7 +148,7 @@ className="layout" >
                         }
                         link="downloads\my_cv.pdf"
                         isDownload={true}
-                        button={<ButtonComponent text="download" onclick={() => console.log()} />}
+                        button={<ButtonComponent text="download" onclick={handleClick} />}
 
                     />
                 </div>
@@ -165,11 +178,6 @@ className="layout" >
                     <h2>meu discord para contatos tambem</h2>
                 </div>
             </footer>
-
-
-
-
-
 
 
 
