@@ -13,7 +13,7 @@ import Navbar from "../../components/nav-bar/NavBar";
 
 
 
-import {initiGa, logEvent, logPageView} from "../../Helper/Analytics/Google-analytic"
+import { initiGa, logEvent, logPageView } from "../../Helper/Analytics/Google-analytic"
 import React from "react";
 
 
@@ -31,7 +31,9 @@ export const HomePage = () => {
         initiGa()
         logPageView()
         window.addEventListener("popstate", logPageView)
-    },[])
+    }, [])
+
+
     return (
         <main>
             <div className="container-home">
@@ -53,19 +55,19 @@ export const HomePage = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 3 }}
-                            >Sobre</motion.h1>
+                        >Sobre</motion.h1>
                         <motion.h3
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 4 }}
-                            
-                            >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos. CLICK NA ESFERA </motion.h3>
+
+                        >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos. CLICK NA ESFERA </motion.h3>
                         <motion.div
 
-initial={{ opacity: 0 }}
-animate={{ opacity: 1 }}
-transition={{ delay: 5 }}
-className="layout" >
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 5 }}
+                            className="layout" >
                             <LayoutComponent />
                         </motion.div>
                     </motion.div>
@@ -158,22 +160,22 @@ className="layout" >
                 <div className="container-empresa">
                     <video src="logo\T.mp4" autoPlay muted loop></video>
                     <a href="https://www.instagram.com/interdevservices/?theme=dark" target="_blank">
-                     <FaInstagram size={50} color="#fff" />interdevservices
+                        <FaInstagram size={50} color="#fff" />interdevservices
                     </a>
                     <h2>Em busca de serviços? clique acima e chama dm</h2>
                 </div>
                 <div className="container-ig-pessoal">
-                    <img src="images\instagramimg.jpg" alt=""/>
+                    <img src="images\instagramimg.jpg" alt="" />
                     <a href="https://www.instagram.com/jauafelipe/" target="_blank">
-                     <FaInstagram size={50} color="#fff" />jauafelipe
+                        <FaInstagram size={50} color="#fff" />jauafelipe
                     </a>
                     <h2>meu instagram para uso pessoal como tambem para contato</h2>
                 </div>
 
                 <div className="discord">
-                <img src="images\discord.jpg" alt=""/>
+                    <img src="images\discord.jpg" alt="" />
                     <a href="https://discord.gg/g3GV48qJNp" target="_blank">
-                     <FaDiscord size={50} color="#fff" />meu Discord
+                        <FaDiscord size={50} color="#fff" />meu Discord
                     </a>
                     <h2>meu discord para contatos tambem</h2>
                 </div>
