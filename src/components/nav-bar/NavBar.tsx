@@ -1,4 +1,4 @@
-import './NavBar.css'; // Certifique-se de criar e importar o arquivo CSS
+import './NavBar.css'; 
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {

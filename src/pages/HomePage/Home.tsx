@@ -19,7 +19,7 @@ import Navbar from "../../components/nav-bar/NavBar";
 
 export const HomePage = () => {
     return (
-        <main >
+        <main>
             <div className="container-home">
 
                 <Navbar />
@@ -40,19 +40,19 @@ export const HomePage = () => {
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 3 }}
-                        >Sobre</motion.h1>
+                            >Sobre</motion.h1>
                         <motion.h3
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ delay: 4 }}
-
-                        >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos. CLICK NA ESFERA </motion.h3>
+                            
+                            >Prazer em conhecê-lo! Sou estudante de Análise e Desenvolvimento de Sistemas, com especialização em tecnologias back-end, incluindo ASP.NET, Node.js, C#, MySQL e SQL Server. Além disso, atuo no desenvolvimento de projetos nativos utilizando Flutter. Abaixo, você poderá conhecer melhor alguns dos meus projetos. CLICK NA ESFERA </motion.h3>
                         <motion.div
 
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 5 }}
-                            className="layout" >
+initial={{ opacity: 0 }}
+animate={{ opacity: 1 }}
+transition={{ delay: 5 }}
+className="layout" >
                             <LayoutComponent />
                         </motion.div>
                     </motion.div>
