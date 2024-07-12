@@ -1,11 +1,11 @@
 import './App.css'
-import {BrowserRouter, Route,  Routes, useLocation} from "react-router-dom"
+import {Route,  Routes, useLocation} from "react-router-dom"
 import { HomePage } from './pages/HomePage/Home.tsx'
 import React, { useEffect } from 'react'
 import { StartHome } from './pages/StartHome/StartHome.tsx'
 import { StartPainel } from './pages/StartPainel/StartPainel.tsx'
 
-const AppContent: React.FC = () => {
+const App: React.FC = () => {
   const location = useLocation();
   useEffect(() => {
     if(window.gtag) {
@@ -26,13 +26,6 @@ const AppContent: React.FC = () => {
 }
 
 
-const App: React.FC = () => {
-  return (
-    <BrowserRouter>
-      <AppContent />
-    </BrowserRouter>
-  );
-};
 
 
 export default App;

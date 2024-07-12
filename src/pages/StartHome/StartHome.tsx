@@ -19,7 +19,7 @@ export const StartHome = () => {
           <div className="tecs">
           </div>
           <Link to={"/start"}>
-          <ButtonComponent text="Entrar"  onclick={() => console.log("Ola mundo")} />
+          <ButtonComponent text="Entrar"   />
           </Link>
         </div>
       </div>
