@@ -35,7 +35,7 @@ export function Sidebar({ open, setOpen }: SidebarProps): JSX.Element {
         <div className="p-8 flex flex-col h-full">
           <div className="flex items-center justify-between">
             <div>
-              <h2 className="text-3xl font-black text-white">fefo_dev</h2>
+              <h2 className="text-3xl font-black text-white">Jauã Felipe</h2>
               <p className="text-zinc-500 mt-2 text-sm">
                 Desenvolvedor Full Stack
               </p>
